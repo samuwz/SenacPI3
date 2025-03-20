@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head th:insert="head.html">
+        
+    </head>
+    <body>
+        
+        <cabecalho th:insert="cabecalho.html" />
+        <h1>Lista de livros</h1>
+        
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Autor</th>
+                <th>Lido</th>
+                <th>Ações</th>
+            </thead>
+            <tbody>
+                <tr th:each="livro: ${livros}">
+                    <td th:text="${livro.id}"></td> 
+                    <td th:text="${livro.nome}"></td> 
+                    <td th:text="${livro.autor}"></td> 
+                    <td th:text="${livro.disponivel}"></td> 
+                    <td>
+                        <a th:href="@{'/livros/detalhes/'} + ${livro.id}">+ Detalhes</a>
+                        <a th:href="@{'/livros/alterar/'} + ${livro.id}">Alterar</a>
+                        <a th:href="@{'/livros/excluir/'} + ${livro.id}">Excluir</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
