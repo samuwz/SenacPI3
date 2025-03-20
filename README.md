@@ -15,6 +15,6 @@ Este sistema permite o cadastro, visualização, edição e exclusão de livros.
 ### Informações para executar a atividade  3
 Para executar a atividade 3 é necessario ter o MySQL, 
 No NetBeans abra o projeto e vá em bibliotecaPI/Other Sources/src/main/resources/ application.properties e edite o
-"spring.datasource.url=" com a url do projeto criado previamente no MySQL, eu nomeie de "bibliotecaPI3"
-"spring.datasource.username=" com seu usuario do MySQL
-"spring.datasource.password=" com sua senha do MySQL
+- "spring.datasource.url=" com a url do projeto criado previamente no MySQL, eu nomeie de "bibliotecaPI3"
+- "spring.datasource.username=" com seu usuario do MySQL
+- "spring.datasource.password=" com sua senha do MySQL
